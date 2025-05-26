@@ -1,0 +1,150 @@
+/* Nova paleta de cores para o MonthlyEarthDay Portal
+ * Baseada nas imagens de referência e requisitos do usuário
+ * 
+ * Requisitos:
+ * - Combinar verde das árvores com azul do mar
+ * - Visual limpo mas não estéril
+ * - Colorido mas sem doer os olhos
+ * - Minimalista sem deixar nada faltar
+ * - Bonito, elegante, moderno e agradável
+ */
+
+:root {
+  /* Cores primárias */
+  --primary-green: #2A7E43;     /* Verde médio para elementos principais */
+  --primary-blue: #1A6B9F;      /* Azul médio para elementos principais */
+  
+  /* Cores secundárias */
+  --secondary-teal: #1D9A8B;    /* Verde-azulado para transição entre os dois temas */
+  --secondary-gold: #E6B54A;    /* Dourado do pôr do sol no banner */
+  
+  /* Cores de fundo */
+  --bg-light: #F7F9F8;          /* Fundo claro quase branco com leve tom verde */
+  --bg-blue-light: #E6F2F8;     /* Fundo azul claro para seções */
+  --bg-green-light: #E8F4EA;    /* Fundo verde claro para seções */
+  --bg-gradient: linear-gradient(135deg, var(--bg-green-light), var(--bg-blue-light)); /* Gradiente suave */
+  
+  /* Cores de texto */
+  --text-dark: #1E3A34;         /* Texto principal escuro com tom verde-azulado */
+  --text-medium: #4A6670;       /* Texto secundário médio */
+  --text-light: #FFFFFF;        /* Texto em fundos escuros */
+  
+  /* Cores de destaque */
+  --accent-orange: #E67E22;     /* Laranja do pôr do sol para call-to-action */
+  --accent-coral: #E74C3C;      /* Coral para alertas e notificações */
+  
+  /* Cores para gráficos e visualizações */
+  --chart-green-1: #2A7E43;     /* Verde base */
+  --chart-green-2: #3D9D5D;     /* Verde mais claro */
+  --chart-green-3: #5CB57A;     /* Verde ainda mais claro */
+  --chart-blue-1: #1A6B9F;      /* Azul base */
+  --chart-blue-2: #2E8BC0;      /* Azul mais claro */
+  --chart-blue-3: #5AADD6;      /* Azul ainda mais claro */
+  
+  /* Sombras */
+  --shadow-sm: 0 2px 4px rgba(30, 58, 52, 0.1);
+  --shadow-md: 0 4px 8px rgba(30, 58, 52, 0.12);
+  --shadow-lg: 0 8px 16px rgba(30, 58, 52, 0.14);
+}
+
+/* Aplicação da paleta no tema */
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+header {
+  background-color: var(--primary-green) !important;
+}
+
+footer {
+  background-color: var(--text-dark) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-blue) !important;
+  border-color: var(--primary-blue) !important;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-teal) !important;
+  border-color: var(--secondary-teal) !important;
+}
+
+.btn-accent {
+  background-color: var(--accent-orange) !important;
+  border-color: var(--accent-orange) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-green) !important;
+}
+
+.bg-secondary {
+  background-color: var(--primary-blue) !important;
+}
+
+.bg-accent {
+  background-color: var(--secondary-gold) !important;
+}
+
+.bg-light-section {
+  background-color: var(--bg-blue-light) !important;
+}
+
+.bg-gradient-section {
+  background: var(--bg-gradient) !important;
+}
+
+.text-primary {
+  color: var(--primary-green) !important;
+}
+
+.text-secondary {
+  color: var(--primary-blue) !important;
+}
+
+.text-accent {
+  color: var(--secondary-gold) !important;
+}
+
+/* Substituições específicas para Tailwind */
+.bg-green-600, .bg-green-700, .bg-green-800 {
+  background-color: var(--primary-green) !important;
+}
+
+.bg-blue-600, .bg-blue-700, .bg-blue-800 {
+  background-color: var(--primary-blue) !important;
+}
+
+.bg-gray-100 {
+  background-color: var(--bg-light) !important;
+}
+
+.bg-gray-800 {
+  background-color: var(--text-dark) !important;
+}
+
+.bg-blue-50 {
+  background-color: var(--bg-blue-light) !important;
+}
+
+.text-green-700, .text-green-800 {
+  color: var(--primary-green) !important;
+}
+
+.text-blue-600 {
+  color: var(--primary-blue) !important;
+}
+
+.hover\:bg-green-700:hover {
+  background-color: var(--chart-green-2) !important;
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: var(--chart-blue-2) !important;
+}
+
+.hover\:text-green-400:hover {
+  color: var(--chart-green-3) !important;
+}
